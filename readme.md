@@ -51,3 +51,47 @@ Le travail vise à améliorer l’esthétique, l’ergonomie et la performance g
 ---
 
 ## 🧩 Structure du projet
+
+---
+
+## 📅 Planification & Deadlines
+
+| Étape | Contenu | Date limite |
+|-------|----------|--------------|
+| 📁 Planification initiale | Dépôt GitHub, README, Kanban | 13/10/2025 – 12h30 |
+| 🎨 Maquettes Figma | Fichiers `.fig` + Captures d’écran | 15/10/2025 – 17h30 |
+| 💻 Intégration & Déploiement | Code HTML/CSS + GitHub Pages | 17/10/2025 – 17h30 |
+
+---
+
+## ⚙️ Critères de performance
+- ✅ Conformité avec les maquettes et la charte graphique  
+- ✅ Compatibilité multi-navigateurs (Chrome, Firefox, Safari, Edge)  
+- ✅ Code valide (HTML & CSS validés W3C)  
+- ✅ Accessibilité (normes WCAG, textes alternatifs, structure sémantique)  
+- ✅ Performances optimisées (chargement rapide, médias compressés)  
+- ✅ Déploiement réussi sur GitHub Pages  
+
+---
+
+## 📢 Présentation finale
+- **Durée totale : 20 minutes**
+  - 🎬 5 min → Démonstration du site  
+  - 💻 10 min → Explication du code  
+  - ❓ 5 min → Questions / Réponses  
+
+---
+
+## 🌐 Liens importants
+- 🔗 **Lien GitHub Project / Jira** : *(à compléter)*  
+- 💻 **Lien GitHub Repository** : *(à compléter)*  
+- 🌍 **Lien GitHub Pages (site déployé)** : *(à compléter)*  
+- 🎨 **Lien Figma (maquette)** : *(à compléter)*  
+- 🧾 **Lien Présentation (Slides)** : *(à compléter)*  
+
+---
+
+## 🧑‍💻 Auteur
+**Kadiri Mohamed**  
+Développeur Front-end & UI/UX Designer  
+Projet réalisé dans le cadre de la formation – Octobre 2025  
