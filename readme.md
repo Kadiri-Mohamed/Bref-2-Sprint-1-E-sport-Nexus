@@ -50,10 +50,6 @@ Le travail vise à améliorer l’esthétique, l’ergonomie et la performance g
 
 ---
 
-## 🧩 Structure du projet
-
----
-
 ## 📅 Planification & Deadlines
 
 | Étape | Contenu | Date limite |
@@ -74,24 +70,7 @@ Le travail vise à améliorer l’esthétique, l’ergonomie et la performance g
 
 ---
 
-## 📢 Présentation finale
-- **Durée totale : 20 minutes**
-  - 🎬 5 min → Démonstration du site  
-  - 💻 10 min → Explication du code  
-  - ❓ 5 min → Questions / Réponses  
-
----
-
-## 🌐 Liens importants
-- 🔗 **Lien GitHub Project / Jira** : *(à compléter)*  
-- 💻 **Lien GitHub Repository** : *(à compléter)*  
-- 🌍 **Lien GitHub Pages (site déployé)** : *(à compléter)*  
-- 🎨 **Lien Figma (maquette)** : *(à compléter)*  
-- 🧾 **Lien Présentation (Slides)** : *(à compléter)*  
-
----
-
 ## 🧑‍💻 Auteur
 **Kadiri Mohamed**  
 Développeur Front-end & UI/UX Designer  
-Projet réalisé dans le cadre de la formation – Octobre 2025  
+Projet réalisé dans le cadre de la formation Youcode – Octobre 2025  
