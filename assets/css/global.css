@@ -70,6 +70,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -99,6 +100,7 @@ header {
   color: var(--border-color);
 }
 
+/*add button briant outline */
 .nexus-button {
   background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
   color: var(--text-color);
@@ -106,12 +108,26 @@ header {
   font-weight: 600;
   margin-left: 20px;
   padding: 10px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: #00cfff 0px 0px 10px;
 }
 
 .nexus-button:hover {
   background-color: var(--text-color);
+}
+
+.outlined-button {
+
+  height: 40px;
+  padding: 10px 10px;
+  background: transparent;
+  border: 2px solid var(--blue-glow);
+  border-radius: 0.5rem;
+  color: var(--blue-glow);
+  transition: all 0.3s ease;
 }
 
 .row {
