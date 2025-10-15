@@ -1,26 +1,18 @@
-main {
-    /* margin: 0 auto;
-    width: 80%;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+.hero {
     position: relative;
     text-align: center;
     background: url(../images/background_hero.webp);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 90vh;
     display: flex;
-    z-index: -2;
     justify-content: center;
-    align-items:flex-start;
+    align-items: center;
+    z-index: 1;
 }
 
-/*
-add a dark overlay to the background image
-*/
-main::after {
+.hero::after {
     content: "";
     position: absolute;
     top: 0;
@@ -30,18 +22,104 @@ main::after {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
-.hero-main{ 
+
+.hero__content {
     width: 70%;
+    max-width: 900px;
+    z-index: 2;
+    padding: 2rem;
 }
 
-.hero-title {
-    background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple)  80%);
+.hero__title {
+    background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 4rem;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+}
+
+.hero__text {
+    color: white;
+    font-size: 1.25rem;
+    margin: 0 0 2rem 0;
+    line-height: 1.6;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta {
+    display: flex;
+    padding: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.cta__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 207, 255, 0.1) 0%, rgba(179, 0, 255, 0.1) 100%);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.cta__title {
+    background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.cta__text {
+    color: var(--light-gray);
+    font-size: 1.125rem;
+    margin: 0 0 2rem 0;
     text-align: center;
 }
-.hero-text{
-    color: white;
-    font-size: 20px;
+
+@media (max-width: 768px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    
+    .hero__text {
+        font-size: 1rem;
+    }
+    
+    .hero__content {
+        width: 90%;
+    }
+    
+    .hero__actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero__actions .button {
+        width: 100%;
+    }
+    
+    .cta__title {
+        font-size: 2rem;
+    }
+    
+    .cta__container {
+        padding: 2rem 1rem;
+    }
 }
