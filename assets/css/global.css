@@ -101,11 +101,23 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
+/* .button-container{
+  display: flex;
+  justify-content: center;
+} */
+.button--large{
+  width: 90% !important;
+}
 .button--primary {
   background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
   color: var(--text-color);
   box-shadow: #00cfff 0px 0px 10px;
+  margin-left: 20px;
+}
+.button--primary_sans_blur {
+  background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
+  color: var(--text-color);
+  /* box-shadow: #00cfff 0px 0px 10px; */
   margin-left: 20px;
 }
 .card-stat-label{

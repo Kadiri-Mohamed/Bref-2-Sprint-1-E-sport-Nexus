@@ -22,9 +22,10 @@
 .games__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2rem;
 }
+
 /* .game__card1{
      background: url('../assets/images/games_logos/valo2.webp'); 
 } */
@@ -34,10 +35,10 @@
     border-radius: 1rem;
     position: relative;
     height: 400px;
-    width: 18rem;
+    width: 17rem;
     overflow: hidden;
     box-shadow: var(--soft-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease , flex-grow 0.3s ease;
     box-shadow: 0 4px 15px rgba(9, 94, 164, 0.3);
     backdrop-filter: blur(10px);
     position: relative;
@@ -46,7 +47,7 @@
 
 .game__card::after{
     content: "";
-    background-color: rgba(0, 0, 0, 0.505);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -55,7 +56,9 @@
 }
 
 .game__card:hover {
+    cursor: pointer;
     transform: translateY(-5px);
+    flex-grow: 0.2;
     box-shadow: 0 8px 25px var(--blue-glow);
     border-color: var(--blue-glow);
 }
@@ -84,17 +87,4 @@
     font-size: 0.9rem;
     color: var(--gray);
     margin-bottom: 1rem;
-}
-
-.game__card-stats {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.85rem;
-    color: var(--light-gray);
-    margin-bottom: 1rem;
-}
-
-.game__card-stats i {
-    margin-right: 0.3rem;
-    color: var(--neon-blue);
 }

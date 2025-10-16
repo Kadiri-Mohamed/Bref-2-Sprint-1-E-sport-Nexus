@@ -1,6 +1,7 @@
 .team__card-stats {
     display: flex;
-    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .teams__cards {
@@ -8,8 +9,8 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    align-items: stretch;
-    gap: 20px;
+    align-items: center;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
@@ -25,12 +26,12 @@
 .teams__content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     justify-content: center;
     gap: 10px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     text-align: center;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 .teams__title {
@@ -55,7 +56,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    height: auto;
+    /* height: rem; */
     /* min-height: 450px; */
     padding: 0px 0px 20px 0px;
     border: 1px solid var(--border-color);
@@ -63,21 +64,23 @@
     width: 17rem;
     background: var(--card-bg);
     box-shadow: 0 4px 15px rgba(9, 94, 164, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ,flex-grow 0.3s ease;
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
 }
 
 .team__card:hover {
+    cursor: pointer;
     transform: translateY(-5px);
+    flex-grow: 5;
     box-shadow: 0 8px 25px var(--blue-glow);
     border-color: var(--blue-glow);
 }
 
 .team__card-image {
     width: 100%;
-    height: 150px;
+    /* height: 100%; */
     object-fit: contain;
     border-radius: 8px 8px 0 0;
     background: var(--dark-bg);
@@ -92,14 +95,26 @@
     border-radius: 8px 8px 0 0;
     background-color: var(--dark-bg);
 }
-
+.teams__card-bagde {
+    display: flex;
+  box-shadow: #bb00ff 0px 0px 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    bottom: 85%;
+    padding: 15px 15px;
+    background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
+    color: var(--text-color);
+    border-radius: 50%;
+}
 .team__card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     width: 100%;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 .team__card-title {
