@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
+*::selection {
+  background-color: var(--neon-purple);
+  color: var(--text-color);
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 400;
+} */
+
 :root {
   --neon-blue: #00cfff;
   --neon-purple: #b300ff;
   --dark-bg: #0d0d0d;
   --light-gray: #a0a0a0;
+  --dark-gray: #4b4b4b;
   --blue-glow: #3b82f6;
   --secondary-color: #f59e0b;
   --text-color: #fff;

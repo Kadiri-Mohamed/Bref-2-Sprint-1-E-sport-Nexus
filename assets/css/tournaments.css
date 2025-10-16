@@ -30,6 +30,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.3s ease;
+
 }
 
 .tournament__card-image-container {
@@ -45,14 +47,18 @@
     box-shadow: 0 4px 15px rgba(9, 94, 164, 0.3);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     overflow: hidden;
 }
 
 .tournament__card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--blue-glow);
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
     border-color: var(--blue-glow);
+}
+.tournament__card:hover img {
+    scale: 1.1;
 }
 
 .tournament__card-button-container {
@@ -69,7 +75,7 @@
 .tournament__card-price-bagde {
     display: flex;
   box-shadow: #00cfff 0px 0px 10px;
-
+    z-index: 100;
     justify-content: center;
     align-items: center;
     position: absolute;
