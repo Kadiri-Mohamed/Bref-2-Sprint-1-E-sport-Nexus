@@ -30,6 +30,7 @@
 
 .blog__card-image {
     width: 100%;
+    z-index: -1;
     height: 100%;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
