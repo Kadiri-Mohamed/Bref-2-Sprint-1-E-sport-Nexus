@@ -26,11 +26,6 @@
     gap: 2rem;
 }
 
-/* .game__card1{
-     background: url('../assets/images/games_logos/valo2.webp'); 
-} */
-
-
 .game__card {
     border-radius: 1rem;
     position: relative;
@@ -38,14 +33,14 @@
     width: 17rem;
     overflow: hidden;
     box-shadow: var(--soft-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease , flex-grow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, flex-grow 0.3s ease;
     box-shadow: 0 4px 15px rgba(9, 94, 164, 0.3);
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
 }
 
-.game__card::after{
+.game__card::after {
     content: "";
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;

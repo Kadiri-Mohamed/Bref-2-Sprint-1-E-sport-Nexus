@@ -50,7 +50,7 @@
     box-shadow: 0 4px 15px rgba(9, 94, 164, 0.3);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease  ;
+    transition: all 0.3s ease;
     overflow: hidden;
 }
 
@@ -61,12 +61,15 @@
     background: linear-gradient(90deg, rgba(0, 255, 255, 0.2) 0%, rgba(255, 0, 255, 0.2) 100%);
     /* backdrop-filter: 20%; */
 }
+
 .blog__card:hover .blog__card-title {
-    color:#00cfff;
+    color: #00cfff;
 }
+
 .blog__card:hover img {
     scale: 1.1;
 }
+
 .blog__card-button-container {
     display: flex;
     width: 100%;
@@ -86,10 +89,12 @@
     color: #00cfff;
     font-size: 1rem;
     font-weight: 10;
-    transition: all 0.3s ease  ;
+    transition: all 0.3s ease;
 
 }
-.blog__card-button-container:hover , .blog__card-button:hover {
+
+.blog__card-button-container:hover,
+.blog__card-button:hover {
     cursor: pointer;
     color: var(--neon-purple);
     translate: 3px;
@@ -110,13 +115,6 @@
     color: var(--text-color);
     border-radius: 100px;
 }
-
-/* .blog__card-prize {
-    color: var(--text-color);
-  box-shadow: #00cfff 0px 0px 10px;
-    font-weight: 700;
-    font-size: 1.1rem;
-} */
 
 .blog__card-content {
     padding: 0 2rem 2rem 2rem;

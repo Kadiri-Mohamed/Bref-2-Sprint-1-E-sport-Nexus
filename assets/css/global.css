@@ -24,7 +24,7 @@
   --text-color: #fff;
   --border-color: #00cfff33;
   --background: var(--dark-bg);
-  --card-bg: #14141ecc;
+  --card-bg: #14141ecf;
   --social-bg: rgba(59, 130, 246, 0.1);
   --social-border: rgba(59, 130, 246, 0.3);
   --social-hover-bg: rgba(59, 130, 246, 0.2);
@@ -115,29 +115,34 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 /* .button-container{
   display: flex;
   justify-content: center;
 } */
-.button--large{
+.button--large {
   width: 90% !important;
 }
+
 .button--primary {
   background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
   color: var(--text-color);
   box-shadow: #00cfff 0px 0px 10px;
   margin-left: 20px;
 }
+
 .button--primary_sans_blur {
   background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
   color: var(--text-color);
   /* box-shadow: #00cfff 0px 0px 10px; */
   margin-left: 20px;
 }
-.card-stat-label{
+
+.card-stat-label {
   font-size: 0.9rem;
-    color: var(--light-gray);
+  color: var(--light-gray);
 }
+
 .button--primary:hover {
   transform: translateY(-2px);
   box-shadow: #00cfff 0px 0px 15px;
@@ -164,7 +169,7 @@ main {
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .footer__brand {
@@ -320,15 +325,15 @@ main {
   font-size: 0.875rem;
 }
 
-.u-gradient-text {
+/* .u-gradient-text {
   background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
+} */
 
-.u-container {
+/* .u-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-}
+} */

@@ -1,9 +1,31 @@
-.tournaments {
+.events {
     padding: 2rem 2rem;
     text-align: center;
+    position: relative;
+    background: url(../images/events/events-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.tournaments__title {
+.events::after {
+     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.events__title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
@@ -13,20 +35,20 @@
     background-clip: text;
 }
 
-.tournaments__text {
+.events__text {
     color: var(--light-gray);
     max-width: 600px;
     margin: 0 auto 3rem;
 }
 
-.tournaments__cards {
+.events__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
 }
 
-.tournament__card-image {
+.event__card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -34,16 +56,16 @@
 
 }
 
-.tournament__card-image-container {
+.event__card-image-container {
     width: 100%;
     height: 12rem;
 }
 
-.tournament__card {
+.event__card {
     background: var(--card-bg);
     border-radius: 1rem;
     padding: 0;
-    width: 17rem;
+    width: 22rem;
     box-shadow: 0 4px 15px rgba(9, 94, 164, 0.3);
     backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
@@ -51,55 +73,55 @@
     overflow: hidden;
 }
 
-.tournament__card:hover {
+.event__card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px var(--blue-glow);
     background: linear-gradient(90deg, rgba(0, 255, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%);
     border-color: var(--blue-glow);
 }
 
-.tournament__card:hover img {
+.event__card:hover img {
     scale: 1.1;
 }
 
-.tournament__card-button-container {
+.event__card-button-container {
     display: flex;
     width: 100%;
     justify-content: flex-start;
 }
 
-.tournament__card-game {
+.event__card-game {
     color: var(--neon-blue);
     font-weight: 600;
 }
 
-.tournament__card-price-bagde {
+.event__card-price-bagde {
     display: flex;
     box-shadow: #00cfff 0px 0px 10px;
     z-index: 100;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 10px;
-    bottom: 90%;
+    left: 10px;
+    bottom: 88%;
     padding: 5px 10px;
     background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
     color: var(--text-color);
     border-radius: 100px;
 }
 
-.tournament__card-content {
+.event__card-content {
     padding: 0 1rem 1rem 1rem;
     text-align: left;
 }
 
-.tournament__card-title {
+.event__card-title {
     color: var(--text-color);
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
 }
 
-.tournament__card-description {
+.event__card-description {
     color: var(--light-gray);
     font-size: 0.9rem;
     margin-bottom: 1rem;
@@ -107,11 +129,11 @@
 }
 
 /* 
-.tournament__card-stats {
+.event__card-stats {
    display: flex;
 }
  */
-.tournament__card-stat {
+.event__card-stat {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -122,12 +144,12 @@
 
 
 @media (max-width: 768px) {
-    .tournaments__cards {
+    .events__cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .tournament__card {
+    .event__card {
         width: 100%;
         max-width: 300px;
     }
