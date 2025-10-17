@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     text-align: center;
-    background: url(../images/background_hero.webp);
+    background: url(../images/events/events-bg.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
